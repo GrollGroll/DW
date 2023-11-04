@@ -1,6 +1,10 @@
-# Dimension Workshop online-store 
 
-<img src="https://github.com/GrollGroll/DW/assets/149895339/39d6281f-c85d-4f04-96ca-3b1c38b5b964" width="200" />
+<div id="header" align="center">
+  <img src="https://github.com/GrollGroll/DW/assets/149895339/39d6281f-c85d-4f04-96ca-3b1c38b5b964" width="200"/>
+  
+# Dimension Workshop online-store 
+</div>
+
 <br/>
 <br/>
 
