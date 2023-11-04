@@ -1,0 +1,60 @@
+/* Стили для обертки формы и заголовка */
+.container {
+  background-color: #333; /* Фон контейнера */
+  color: #fff; /* Цвет текста */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px; /* Закругленные углы */
+  text-align: center;
+}
+
+/* Стили для формы и её элементов */
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center; /* Центрировать содержимое формы */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #444; /* Граница полей ввода */
+  background-color: #222; /* Фон полей ввода */
+  color: #fff; /* Цвет текста в полях ввода */
+  border-radius: 5px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #fff; /* Изменение границы при фокусе */
+}
+
+input[type="submit"] {
+  display: inline-block; /* Делаем кнопку блочным элементом, чтобы ее можно было центрировать */
+  width: 200px;
+  padding: 10px;
+  border: 5px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+.white-line {
+  margin: auto; /* Центрирование по горизонтали */
+  height: 1px; /* Толщина линии */
+  width: 50%; /* Ширина линии (по горизонтали) */
+  background-color: rgba(255, 255, 255, 0.671); /* Цвет линии */
+  margin-top: 0px; /* Отступ сверху */
+  margin-bottom: 20px; /* Отступ снизу */
+}

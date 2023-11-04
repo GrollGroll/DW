@@ -1,0 +1,68 @@
+body {
+  background-color: #e4e4e4;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "EB Garamond", serif;
+}
+
+.up-panel {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+
+.left-elements {
+  display: flex;
+  margin: auto;
+  width: 22%;
+  align-items: center;
+}
+
+.MainLogo {
+  display: block;
+  border: 4px solid;
+  border-color: #fff;
+  margin: 10px 50px;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out 0.05s;
+}
+
+.MainLogo:hover {
+  transform: scale(1.1); /* Увеличение размера при наведении */
+}
+
+.button-link {
+  display: inline-block;
+  height: 8px;
+  line-height: 8px;
+  padding: 10px 20px; /* Регулируйте отступы по вашему усмотрению */
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px; /* Скругленные края */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #333; /* Цвет при наведении */
+  transform: scale(1.05); /* Увеличение размера при наведении */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.telegram {
+  margin-left: auto;
+  margin-right: 40px;
+  max-width: 40px;
+  transition: transform 0.2s;
+}
+
+.telegram:hover {
+  transform: scale(1.2); /* Увеличение размера при наведении */
+}

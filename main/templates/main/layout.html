@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'main/css/panel.css' %}" />
+    {% block title %} {% endblock %}
+  </head>
+  <body>
+    <div class="up-panel">
+      <div class="left-elements">
+        <a href="{% url 'authorization' %}" class="button-link">Заказ</a>
+        <a href="{% url 'home' %}">
+          <img
+            src="{% static 'main/img/DW.jpg' %}"
+            alt="DW logo"
+            class="MainLogo"
+          />
+        </a>
+        <a href="" class="button-link">Товары</a>
+      </div>
+
+      <a href="https://t.me/dimension_workshop" target="_blank">
+        <img
+          src="{% static 'main/img/TelegramLogo.png' %}"
+          alt="TelegramLogo"
+          class="telegram"
+        />
+      </a>
+    </div>
+
+    {% block content %} {% endblock %}
+  </body>
+</html>

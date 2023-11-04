@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %} {% block title %}
+<title>Про нас</title>
+<link rel="stylesheet" href="styles.css" />
+{% endblock %} {% block content %}
+<div class="header">
+  <div><img class="MainLogo" src="DW.jpg" alt="DW Logo" /></div>
+  <div class="title">
+    <h1>Dimension Workshop</h1>
+    <div class="info">
+      <h2>Творческая мастерская по 3D печати и не только!</h2>
+    </div>
+  </div>
+</div>
+<div class="header">
+  <div class="description">
+    <p>Следите за нашими новосятями в телеграмм канале</p>
+  </div>
+  <a href="https://t.me/dimension_workshop" target="_blank">
+    <img src="TelegramLogo.png" alt="TelegramLogo" class="telegram" />
+  </a>
+</div>
+{% endblock %}
