@@ -34,7 +34,6 @@
   border-radius: 5px;
   text-align: center;
   width: 300px;
-  border: 3px solid rgb(154, 154, 154);
   transition: 0.4s;
   box-shadow: 10px 10px rgb(0, 0, 0);
 }
@@ -46,17 +45,12 @@
 .picture {
   width: 60%;
   border-radius: 10px;
-  border: 3px solid rgb(127, 127, 127);
   transition: 0.4s;
 }
 
 .container:hover {
-  border: 3px solid rgb(35, 35, 35);
   box-shadow: 10px 10px rgb(124, 124, 124);
-}
-
-.container:hover img {
-  border: 3px solid rgb(255, 255, 255);
+  transform: scale(1.03);
 }
 
 .white-line {
