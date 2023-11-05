@@ -8,7 +8,7 @@
 <br/>
 <br/>
 
-This web application is written using ***Django Framework***.
+This web application is created using ***Django Framework***.
 
 ### What is this for?
 
@@ -17,7 +17,7 @@ The project is being developed to consolidate and improve my skills. In addition
 
 ### What should the result be?
 
-This should be a site with user authorization, online orders and the ability to buy an existing product from the listed ones.
+This should be a site with user authorization, online orders and the ability to buy an existing product from the list.
 
 ### Current result:
 
