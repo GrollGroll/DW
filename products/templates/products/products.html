@@ -1,17 +1,24 @@
 {% extends 'main/layout.html' %} {% load static %} {% block title %}
-<title>Prodeucts</title>
+<title>Products</title>
 <link rel="stylesheet" href="{% static 'products/css/products_styles.css' %}" />
 {% endblock %} {% block content %}
-<div class="container">
+<div class="title">
   <h3>Товары</h3>
-  <div class="white-line"></div>
-  <p>Бутылкорез регулируемый</p>
-  <p>Бутылкорез с плавной регулировкой ширины нарезаемой ленты</p>
+  <div class="black-line"></div>
+  <h5>
+    Получайте удовольствие от творчества с интересными товарами от компании
+    Dimension Workshop!
+  </h5>
 </div>
-<div class="container">
-  <h3>Регистрация</h3>
-  <div class="white-line"></div>
-  <p>Бутылкорез малый</p>
-  <p>Бутылкорез с фиксированной шириной нарезаемой ленты</p>
+<div class="main_container">
+  {% for el in products %}
+  <div class="container">
+    <img src="{{ el.image.url }}" alt="" class="picture" />
+    <h3>{{ el.name }}</h3>
+    <div class="white-line"></div>
+    <p class="description">{{ el.description }}</p>
+    <a href="" class="button-link-product">В корзину {{ el.price }} ₽</a>
+  </div>
+  {% endfor %}
 </div>
 {% endblock %}
