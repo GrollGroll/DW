@@ -31,18 +31,18 @@ body {
 }
 
 .MainLogo:hover {
-  transform: scale(1.1); /* Увеличение размера при наведении */
+  transform: scale(1.1);
 }
 
 .button-link {
   display: inline-block;
   height: 8px;
   line-height: 8px;
-  padding: 10px 20px; /* Регулируйте отступы по вашему усмотрению */
+  padding: 10px 20px;
   background-color: black;
   color: white;
   border: 2px solid white;
-  border-radius: 8px; /* Скругленные края */
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -51,9 +51,9 @@ body {
 }
 
 .button-link:hover {
-  background-color: #333; /* Цвет при наведении */
-  transform: scale(1.05); /* Увеличение размера при наведении */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .telegram {
@@ -64,5 +64,5 @@ body {
 }
 
 .telegram:hover {
-  transform: scale(1.2); /* Увеличение размера при наведении */
+  transform: scale(1.2);
 }
