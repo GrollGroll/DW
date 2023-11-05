@@ -21,16 +21,22 @@ This should be a site with user authorization, online orders and the ability to 
 
 ### Current result:
 
-Two pages available: 
   1. Main page
   2. Authorization page
+
+
+  _05.11 Update:_
+    
+  4. Product page
+  5. Product database is connected
+  6. Products are displayed on the products page
 
 ### Further plans:
 
 
-- [ ] Create page with products
-- [ ] Сonnect the product database
-- [ ] Display the product database on the product page as a table
+- [x] Create page with products
+- [x] Сonnect the product database
+- [x] Display the product database on the product page as a table
 - [ ] Сonnect user database
 - [ ] Set up user registration
 - [ ] Create profile page
