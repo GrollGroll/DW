@@ -14,11 +14,10 @@
   {% for el in products %}
   <div class="container">
     <img src="{{ el.image.url }}" alt="" class="picture" />
-    <h4>{{ el.name }}</h4>
+    <h3>{{ el.name }}</h3>
     <div class="white-line"></div>
-    <p>{{ el.description }}</p>
-    <p>{{ el.price }}</p>
-    <a href="" class="button-link">В корзину </a>
+    <p class="description">{{ el.description }}</p>
+    <a href="" class="button-link-product">В корзину {{ el.price }} ₽</a>
   </div>
   {% endfor %}
 </div>
