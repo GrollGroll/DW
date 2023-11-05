@@ -1,10 +1,14 @@
 from django.db import models
 
 class Products (models.Model):
-    # Image = models.ImageField
-    Name = models.CharField('name', max_length = 50)
-    Description = models.TextField('description')
-    Price = models.IntegerField('price')
+    image = models.ImageField('Изображение', upload_to= 'images/')
+    name = models.CharField('Название', max_length = 50)
+    description = models.TextField('Описание')
+    price = models.IntegerField('Цена')
 
-def __str__(self):
-    return self.Name
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Товар'
+        verbose_name_plural = 'Товары'
