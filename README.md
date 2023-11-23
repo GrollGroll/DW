@@ -38,6 +38,5 @@ This should be a site with user authorization, online orders and the ability to 
 - [x] Сonnect the product database
 - [x] Display the product database on the product page as a table
 - [ ] Сonnect user database
-- [ ] Set up user registration
-- [ ] Create profile page
-- [ ] Set up user login to the site
+- [ ] Set up user authentication
+- [ ] Create user profile page
