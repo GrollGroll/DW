@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %} {% load static %} {% block title %}
+<title>authorization</title>
+<link rel="stylesheet" href="{% static 'users\css\stylesForAyth.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  <h3>Вход на сайт</h3>
+  <div class="white-line"></div>
+  <form action="{% url 'authentication' %}" method="post">
+    {% csrf_token %} {{ form.username }} {{ form.password }}
+    <!-- <input type="email" placeholder="E-mail" />
+    <input type="password" placeholder="Пароль" /> -->
+    <input type="submit" value="Войти" />
+  </form>
+  <a href="{% url 'registration' %}" class="button-link">Регистрация</a>
+</div>
+{% endblock %}
