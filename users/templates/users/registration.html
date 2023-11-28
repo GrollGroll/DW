@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %} {% load static %} {% block title %}
+<title>registration</title>
+<link rel="stylesheet" href="{% static 'users\css\stylesForAyth.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  <h3>Регистрация</h3>
+  <div class="white-line"></div>
+  <form action="{% url 'registration' %}" method="post">
+    {% csrf_token %} 
+    {{ form.first_name }} 
+    {{ form.last_name }} 
+    {{ form.username }} 
+    {{ form.email }} 
+    {{ form.password1 }} 
+    {{ form.password2 }}
+    <!-- <input type="text" placeholder="Имя" />
+    <input type="text" placeholder="Фамилия" />
+    <input type="email" placeholder="E-mail" />
+    <input type="password" placeholder="Пароль" />
+    <input type="password" placeholder="Повторите пароль" />
+    <input type="submit" value="Зарегестрироваться" /> -->
+    <input type="submit" value="Зарегестрироваться" />
+  </form>
+</div>
+{% if Error %}
+<div class="ErrorCenter">
+  <div class="Error">
+    {{ Error }}
+  </div>
+</div>
+{% endif %}
+
+
+
+{% endblock %}
